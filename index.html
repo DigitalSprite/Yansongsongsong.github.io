@@ -1,103 +1,53 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<title>A Letter for Forgiveness</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>demo1</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#353636;
+			margin:0;
+			height:100%;
 		}
 	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-</head>
+	<!-- copy these lines to your document head: -->
 
-<body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We encountered each other one day in 2012.</span><br />
-				<span class="space"/><span class="comments">* Our love story begins from Dec 20, 2016.</span><br />
-				<span class="space"/><span class="comments">* But these days, I always made her unhappy,</span><br />
-				<span class="space"/><span class="comments">* so I modify some codes to express	my love to her. </span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Yansong"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Yuan"</span>);<br />
-				<span class="comments">// Dec 20, 2016, the day after my birthday, I said " May I take care of you? " </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you said yes, accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Yuan, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// But I made you so sad these days.</span><br />
-				i.haveTroubleWith(u);<br />
-				<span class="comments">// You said that you could't feel the love from me.</span><br />
-				<span class="comments">// I'm so guilty, I'm so sorry for those days that I had ignored you.</span><br />
-				<span class="keyword">boolean</span> uAreSad = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (uAreSad) {<br />
-				<span class="placeholder"/>i.feelGuiltyFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I can't stop feeling terrible, unless you choose to forgive me.</span><br />
-				<span class="placeholder"/><span class="comments">// But I don't know whether I can get your forgiveness,</span><br />
-				<span class="placeholder"/><span class="comments">// because I was so childish.</span><br />
-				<span class="placeholder"/><span class="comments">// Can u forgive what I have done to u?</span><br />
-				<span class="placeholder"/><span class="comments">// I'm so sorry for all.</span><br />
-				<span class="placeholder"/>uAreSad = i.askForgivenessFrom(u);<br />
-				}<br />
-				<span class="comments">// I'm so sorry for it, I promise that I'll be with u for ever.</span><br />
-				i.beWithU.setTime(FOREVER);<br />
-				i.hopeLiveHappilyWith(u);<br />
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						Yuan, I have fallen in love with you for
-						<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- Yansong</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<meta name="viewport" content="user-scalable=yes, width=375" />
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="demo1_hype_container" style="margin:auto;position:relative;width:375px;height:667px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="demo1.hyperesources/demo1_hype_generated_script.js?16691"></script>
 	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2016, 11, 20);
-		together.setHours(00);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
+	<!-- end copy -->
+	
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
-</body>
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>EmotionHaHa</div>
+		<div>Sunshine</div>
+		<div>That’s all</div>
+		<div>A new day !</div>
+		<div>Work</div>
+		<div>Lucky!</div>
+		<div></div>
+		<div>Tired
+</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
 </html>
