@@ -1,53 +1,293 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
-	<title>demo1</title>
-	<style>
-		html {
-			height:100%;
-		}
-		body {
-			background-color:#353636;
-			margin:0;
-			height:100%;
-		}
-	</style>
-	<!-- copy these lines to your document head: -->
+<html lang="en-gb" dir="ltr" class="" style="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>TJSSESU</title>
+    </head>
+    <body style="background: #fafafa">
+        <!-- 导航栏 -->
+        <div uk-sticky="top: 300; animation: uk-animation-slide-top" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed">
+            <div class="uk-container uk-container-expand uk-background-secondary">
+                <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
+                        <a href="#" class="uk-navbar-item uk-logo uk-visible@s" style="color: white; strong">TJSSESU</a>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <a href="#" class="uk-navbar-item uk-logo uk-hidden@s" style="color: white; strong">TJSSESU</a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@s">
+                            <li><a href="#news" uk-scroll>新闻</a></li> 
+                            <li><a href="#feedback" uk-scroll>权益反馈</a></li> 
+                            <li><a href="#about-us" uk-scroll>关于我们</a></li>
+                        </ul> 
+                        <div class="uk-navbar-item">
+                            <a class="uk-icon-button uk-margin-small-right"  uk-icon="icon: user" type="button" uk-toggle="target: #offcanvas-flip"></a>
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-	<meta name="viewport" content="user-scalable=yes, width=375" />
+        <div class="uk-inline">
+            <img src="assets/images/header-bg.jpg" alt=""／>
+            <div class="uk-position-cover uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
+                <article class="uk-article uk-text-center">
 
-	<!-- end copy -->
-  </head>
-  <body>
-	<!-- copy these lines to your document: -->
+                    <h1 class="uk-heading-primary" style="color: white">We are together</h1>
 
-	<div id="demo1_hype_container" style="margin:auto;position:relative;width:375px;height:667px;overflow:hidden;">
-		<script type="text/javascript" charset="utf-8" src="demo1.hyperesources/demo1_hype_generated_script.js?16691"></script>
-	</div>
+                    <p class="uk-text-lead" style="color: white">同济大学软件学院团学联</p>
 
-	<!-- end copy -->
-	
+                </article>
+            </div>
+        </div>
 
+        <div class="uk-container uk-margin-top uk-margin-large-bottom uk-container-center" >
+            <!-- 内容 -->
+            
+            <div>
+                <div id="news" class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-clearfix">
+                        <div class="uk-float-left">
+                            <h2 >新闻</h2>
+                        </div>
+                        <div class="uk-float-right uk-margin-small-top">                            
+                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                        </div>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="uk-card-footer">
+                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-hover uk-card-body">
+                                    <div class="uk-inline-clip uk-transition-toggle">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/header-bg.jpg" alt=""／>
+                                        <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                            <button class="uk-button uk-button-default">Detail</button>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <a href="#" class="uk-button uk-button-text uk-margin">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-	<!-- text content for search engines: -->
+                            <div>
+                                <div class="uk-card uk-card-hover uk-card-body">
+                                    <div class="uk-inline-clip uk-transition-toggle">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/header-bg.jpg" alt=""／>
+                                        <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                            <button class="uk-button uk-button-default">Detail</button>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <a href="#" class="uk-button uk-button-text uk-margin">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-	<div style="display:none" aria-hidden=true>
+                            <div>
+                                <div class="uk-card uk-card-hover uk-card-body">
+                                    <div class="uk-inline-clip uk-transition-toggle">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/header-bg.jpg" alt=""／>
+                                        <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                            <button class="uk-button uk-button-default">Detail</button>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <a href="#" class="uk-button uk-button-text uk-margin">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-		<div>EmotionHaHa</div>
-		<div>Sunshine</div>
-		<div>That’s all</div>
-		<div>A new day !</div>
-		<div>Work</div>
-		<div>Lucky!</div>
-		<div></div>
-		<div>Tired
-</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
-	</div>
+        <div class="uk-container uk-margin-top uk-margin-large-bottom uk-container-center" >
+            
+            <div>
+                <div id="feedback" class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-clearfix">
+                        <div class="uk-float-left">
+                            <h2 >权益反馈</h2>
+                        </div>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="uk-card-footer">
+                        <div class="uk-child-width-1-2@m uk-grid-large" uk-grid>
+                            <div>
+                                <div class="uk-tile uk-tile-default uk-padding-remove ">
+                                    <div class="uk-clearfix">
+                                        <div class="uk-float-left">
+                                            <h3 >权益之声</h3>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-small-top">                            
+                                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div >
+                                    <ul uk-accordion="multiple: true">
+                                        <li class="uk-open">
+                                            <h3 class="uk-accordion-title">你的反馈</h3>
+                                            <div class="uk-accordion-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </li>
+                                        <li class="uk-open">
+                                            <h3 class="uk-accordion-title">团学联回复</h3>
+                                            <div class="uk-accordion-content">
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-tile uk-tile-default uk-padding-remove">
+                                    <h3><a href="#about-us" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">你的声音</h3></a></h3>
+                                    <div>
+                                        <form action="">
+                                            <fieldset class="uk-fieldset">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="form-stacked-text">你的称呼</label>
+                                                    <input class="uk-input uk-form-blank" type="text"  required placeholder="输入称呼...">
+                                                </div>
 
-	<!-- end text content: -->
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="form-stacked-text">联系方式</label>
+                                                    <input class="uk-input uk-form-blank" type="email" placeholder="我们会通过这个邮箱联系你...">
+                                                </div>
 
-  </body>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="form-stacked-text">反馈内容</label>
+                                                    <textarea class="uk-textarea uk-form-blank" required rows="5" placeholder="在这里输入你的反馈信息..."></textarea>
+                                                </div>
+                                            </fieldset>
+
+                                            <!-- 此处提交存疑 -->
+                                            <div class="uk-margin" uk-margin>
+                                                <div class="uk-inline">
+                                                    <input class="uk-button uk-button-default" type="submit" value="提交" >
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 右侧面板 -->
+        <div id="offcanvas-flip" uk-offcanvas="flip: true; mode: push; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                
+                <div class="uk-position-center uk-container uk-text-center" uk-grid>
+                    <h3 class="uk-width-medium-1-2 uk-container-center">登录</h3>
+
+                    <form> <!-- 提示信息重写 -->
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <input class="uk-input hasNoValue" id="accountInput" type="text" required="required" placeholder="输入账号" >
+                            </div>
+                        </div>
+
+                        <div class="uk-margin" uk-margin>
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                <input class="uk-input hasNoValue" id="passwordInput"  type="password" required="required" placeholder="输入密码">
+                            </div>
+
+                        </div>
+                        
+                        <!-- 此处提交存疑 -->
+                        <div class="uk-margin" uk-margin>
+                            <div class="uk-inline">
+                                <input class="uk-button uk-button-default" type="submit" value="登录" >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- 底部 -->
+        <div class="tm-footer uk-section uk-section-secondary uk-light uk-container-expand" id="about-us">
+            <div class="uk-container">
+
+                <h2>关于我们</h2>
+
+                <div class="uk-child-width-1-3 uk-grid-small" uk-grid>
+                    <div>
+                        <div class="uk-tile uk-tile-secondary uk-padding-remove">
+                            <h3><a href="#about-us" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">组织架构</h3></a></h3>
+                            <div >
+                                <p>文艺部</p>
+                                <p>体育部</p>
+                                <p>宣传部</p>
+                                <p>组织部</p>
+                                <p>外联部</p>
+                                <p>学术部</p>
+                                <p>秘书处</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div>
+                        <div class="uk-tile uk-tile-secondary uk-padding-remove">
+                            <h3><a href="#about-us" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">联系方式</h3></a></h3>
+                            <div>
+                                <p>地址：上海市曹安公路4800号 同济大学济世楼509 </p>
+                                <p>公共邮箱：tjssesu@163.com</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div>
+                        <div class="uk-tile uk-tile-secondary uk-padding-remove">
+                            <h3><a href="http://sse.tongji.edu.cn" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">学院官网</h3></a></h3>
+                            <div >
+                                <p>sse.tongji.edu.cn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
+
+
+
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
+<!-- jQuery is required -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
