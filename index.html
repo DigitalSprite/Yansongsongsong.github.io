@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-gb" dir="ltr" class="" style="">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,282 +12,428 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
 
         <script src="https://cdn.bootcss.com/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
-        <title>TJSSESU</title>
+        <title>同济大学软件学院团学联</title>
+        <style>
+            @font-face {font-family: "san";
+              src: url('res/font/webfont.eot'); /* IE9*/
+              src: url('res/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+              url('res/font/webfont.woff') format('woff'), /* chrome、firefox */
+              url('res/font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+              url('res/font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+            }
+            html {
+                font-size: 100%;
+            }
+            
+            .san-h0 {
+              font-family:"san" !important;
+              font-size:3.3em;
+              font-style:normal;
+              -webkit-font-smoothing: antialiased;
+              -webkit-text-stroke-width: 0.2px;
+              -moz-osx-font-smoothing: grayscale;
+            }
+            .san-h1 {
+              font-family:"san" !important;
+              font-size:2.6em;
+              font-style:normal;
+              -webkit-font-smoothing: antialiased;
+              -webkit-text-stroke-width: 0.2px;
+              -moz-osx-font-smoothing: grayscale;
+            }
+            .san-h2 {
+              font-family:"san" !important;
+              font-size:2em;
+              font-style:normal;
+              -webkit-font-smoothing: antialiased;
+              -webkit-text-stroke-width: 0.2px;
+              -moz-osx-font-smoothing: grayscale;
+            }
+            .san-h3 {
+              font-family:"san" !important;
+              font-size:1.5em;
+              font-style:normal;
+              -webkit-font-smoothing: antialiased;
+              -webkit-text-stroke-width: 0.2px;
+              -moz-osx-font-smoothing: grayscale;
+            }
+            .san-h4 {
+              font-family:"san" !important;
+              font-size:1.25em;
+              font-style:normal;
+              -webkit-font-smoothing: antialiased;
+              -webkit-text-stroke-width: 0.2px;
+              -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
     </head>
-    <body style="background: #fafafa">
-        <!-- 导航栏 -->
-        <div uk-sticky="top: 300; animation: uk-animation-slide-top" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed">
-            <div class="uk-container uk-container-expand uk-background-secondary">
-                <nav class="uk-navbar">
-                    <div class="uk-navbar-left">
-                        <a href="#" class="uk-navbar-item uk-logo uk-visible@s" style="color: white; strong">TJSSESU</a>
-                    </div>
-                    <div class="uk-navbar-center">
-                        <a href="#" class="uk-navbar-item uk-logo uk-hidden@s" style="color: white; strong">TJSSESU</a>
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav uk-visible@s">
-                            <li><a href="#news" uk-scroll>新闻</a></li> 
-                            <li><a href="#feedback" uk-scroll>权益反馈</a></li> 
-                            <li><a href="#about-us" uk-scroll>关于我们</a></li>
-                        </ul> 
-                        <div class="uk-navbar-item">
-                            <a class="uk-icon-button uk-margin-small-right"  uk-icon="icon: user" type="button" uk-toggle="target: #offcanvas-flip"></a>
-                        </div> 
-                    </div>
-                </nav>
-            </div>
-        </div>
-
-        <div class="uk-inline">
-            <img src="assets/images/header-bg.jpg" alt=""／>
-            <div class="uk-position-cover uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
-                <article class="uk-article uk-text-center">
-
-                    <h1 class="uk-heading-primary" style="color: white">We are together</h1>
-
-                    <p class="uk-text-lead" style="color: white">同济大学软件学院团学联</p>
-
+    <body style="background: #222222">
+        <!-- 风采图 -->
+        <div class="uk-inline" >
+            <img src="res/img/union_1.jpg" alt=""／>
+            <div class="uk-overlay-primary uk-position-cover"></div>
+            <div class="uk-overlay uk-flex uk-flex-center uk-position-center" >
+                <article class="uk-article uk-text-center" uk-parallax="opacity: 1,0; y: 100; viewport: 0.5">
+                    <h1 class="san-h1" style="color: white">这里是</h1>
+                    <h1 class="san-h0" style="color: white">同济大学软件学院团学联</h1>
                 </article>
             </div>
         </div>
-
-        <div class="uk-container uk-margin-top uk-margin-large-bottom uk-container-center" >
-            <!-- 内容 -->
-            
-            <div>
-                <div id="news" class="uk-card uk-card-default uk-card-body">
-                    <div class="uk-clearfix">
-                        <div class="uk-float-left">
-                            <h2 class="uk-h2">新闻</h2>
-                        </div>
-                        <div class="uk-float-right uk-margin-small-top">                            
-                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                        </div>
-                    </div>
-                    <!-- 内容 -->
-                    <div class="uk-card-footer">
-                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <div class="uk-inline-clip uk-transition-toggle">
-                                        <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/header-bg.jpg" alt=""／>
-                                        <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                            <button class="uk-button uk-button-default">Detail</button>
-                                        </div>
-                                    </div>
-                                    <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <a href="#" class="uk-button uk-button-text uk-margin">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <div class="uk-inline-clip uk-transition-toggle">
-                                        <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/header-bg.jpg" alt=""／>
-                                        <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                            <button class="uk-button uk-button-default">Detail</button>
-                                        </div>
-                                    </div>
-                                    <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <a href="#" class="uk-button uk-button-text uk-margin">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <div class="uk-inline-clip uk-transition-toggle">
-                                        <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/header-bg.jpg" alt=""／>
-                                        <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                            <button class="uk-button uk-button-default">Detail</button>
-                                        </div>
-                                    </div>
-                                    <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                            <a href="#" class="uk-button uk-button-text uk-margin">Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+        <div class="uk-section uk-section-large uk-section-secondary">
+            <div class="uk-container uk-padding-large">
+                <div>
+                    <div class="uk-width-1-3 uk-flex-column">
+                        <h1 class="san-h0 uk-text-center " style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">我们是？</h1>
                     </div>
                     
-                </div>
-            </div>
-        </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary">
 
-        <div class="uk-container uk-margin-top uk-margin-large-bottom uk-container-center" >
-            
-            <div>
-                <div id="feedback" class="uk-card uk-card-default uk-card-body">
-                    <div class="uk-clearfix">
-                        <div class="uk-float-left">
-                            <h2 >权益反馈</h2>
-                        </div>
                     </div>
-                    <!-- 内容 -->
-                    <div class="uk-card-footer">
-                        <div class="uk-child-width-1-2@m uk-grid-large" uk-grid>
-                            <div>
-                                <div class="uk-tile uk-tile-default uk-padding-remove ">
-                                    <div class="uk-clearfix">
-                                        <div class="uk-float-left">
-                                            <h3 >权益之声</h3>
-                                        </div>
-                                        <div class="uk-float-right uk-margin-small-top">                            
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div >
-                                    <ul uk-accordion="multiple: true">
-                                        <li class="uk-open">
-                                            <h3 class="uk-accordion-title">你的反馈</h3>
-                                            <div class="uk-accordion-content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                        </li>
-                                        <li class="uk-open">
-                                            <h3 class="uk-accordion-title">团学联回复</h3>
-                                            <div class="uk-accordion-content">
-                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-tile uk-tile-default uk-padding-remove">
-                                    <h3><a href="#feedback" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">你的声音</h3></a></h3>
-                                    <div>
-                                        <form action="">
-                                            <fieldset class="uk-fieldset">
-                                                <div class="uk-margin">
-                                                    <label class="uk-form-label" for="form-stacked-text">你的称呼</label>
-                                                    <input class="uk-input uk-form-blank" type="text"  required placeholder="输入称呼...">
-                                                </div>
-
-                                                <div class="uk-margin">
-                                                    <label class="uk-form-label" for="form-stacked-text">联系方式</label>
-                                                    <input class="uk-input uk-form-blank" type="email" placeholder="我们会通过这个邮箱联系你...">
-                                                </div>
-
-                                                <div class="uk-margin">
-                                                    <label class="uk-form-label" for="form-stacked-text">反馈内容</label>
-                                                    <textarea class="uk-textarea uk-form-blank" required rows="5" placeholder="在这里输入你的反馈信息..."></textarea>
-                                                </div>
-                                            </fieldset>
-
-                                            <!-- 此处提交存疑 -->
-                                            <div class="uk-margin" uk-margin>
-                                                <div class="uk-inline">
-                                                    <input class="uk-button uk-button-default" type="submit" value="提交" >
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 右侧面板 -->
-        <div id="offcanvas-flip" uk-offcanvas="flip: true; mode: push; overlay: true">
-            <div class="uk-offcanvas-bar">
-
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                
-                <div class="uk-position-center uk-container uk-text-center" uk-grid>
-                    <h3 class="uk-width-medium-1-2 uk-container-center">登录</h3>
-
-                    <form> <!-- 提示信息重写 -->
-                        <div class="uk-margin">
-                            <div class="uk-inline">
-                                <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                <input class="uk-input hasNoValue" id="accountInput" type="text" required="required" placeholder="输入账号" >
-                            </div>
+                    
+                    <!-- 一 -->
+                    <div class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-3" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                            <h1 class="san-h1  " style="color: white">一、学生团体</h1>
                         </div>
 
-                        <div class="uk-margin" uk-margin>
-                            <div class="uk-inline">
-                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                <input class="uk-input hasNoValue" id="passwordInput"  type="password" required="required" placeholder="输入密码">
-                            </div>
-
+                        <div class="uk-width-2-3 uk-text-left" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                            <h2 class="san-h2" style="color: white">自我服务、自我管理、自我教育，坚持民主决议。</h2>
+                            <h2 class="san-h2" style="color: white">基于群体、基于自觉、基于创想，追求平等自由。</h2>
                         </div>
                         
-                        <!-- 此处提交存疑 -->
-                        <div class="uk-margin" uk-margin>
-                            <div class="uk-inline">
-                                <input class="uk-button uk-button-default" type="submit" value="登录" >
+
+                        <div class="uk-width-1-3@m uk-text-center">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">学生团体</h3>
+                            <div class="uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque" src="res/img/school.png" alt=""／>
+                                <div class="uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-                
-            </div>
-        </div>
-        
-        <!-- 底部 -->
-        <div class="tm-footer uk-section uk-section-secondary uk-light uk-container-expand" id="about-us">
-            <div class="uk-container">
+                        <div class="uk-width-1-3@m uk-text-center">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">团学联组织</h3>
+                            <div class="uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque" src="res/img/member.png" alt=""／>
+                                <div class="uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@m uk-text-center">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">学生团体</h3>
+                            <div class="uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque" src="res/img/students.png" alt=""／>
+                                <div class="uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <h2>关于我们</h2>
+                    <div class="uk-section uk-section-medium uk-section-secondary">
 
-                <div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
+                    </div>
+
+                    <!-- 二 -->
+                    <div class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div class="uk-width-2-3 uk-text-left" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                            <h2 class="san-h2" style="color: white">据理力争，捍卫每一位同学的切身权益。</h2>
+                            <h2 class="san-h2" style="color: white">代表学生，确保每一个想法都掷地有声。</h2>
+                        </div>
+
+                        <div class="uk-width-1-3" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                            <h1 class="san-h1  " style="color: white">二、沟通桥梁</h1>
+                        </div>
+                        
+                        <div class="uk-width-1-3@m uk-text-center">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">学生代表</h3>
+                            <div class="uk-border-circle uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-transition-scale-up uk-transition-opaque" src="res/img/rep_2.jpeg" alt=""／>
+                                <div class="uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@m uk-text-center">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">学生代表</h3>
+                            <div class="uk-border-circle uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque" src="res/img/rep_1.jpeg" alt=""／>
+                                <div class="uk-position-cover uk-overlay uk-flex uk-flex-center uk-flex-middle" style="background: black; opacity: 0.5;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-section uk-section-medium uk-section-secondary">
+
+                    </div>
+                    
+                    <!-- 三 -->
+                    <div id="test-filter" class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-3">
+                            <h1 class="san-h1  " style="color: white">三、团委+学联</h1>
+                        </div>
+                        <div class="uk-width-2-3 uk-text-left" >
+                            <h2 class="san-h2" style="color: white">校方学生联手，不仅仅是领导。</h2>
+                            <h2 class="san-h2" style="color: white">学生校方合作，不仅仅是共赢。</h2>
+                        </div>
+
+                        <div class="uk-width-1-3 uk-text-center" uk-parallax="target: #test-filter; blur: 0,5;">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">教师</h3>
+                            <div class="uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded" src="res/img/teacher.svg" alt=""／>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3 uk-text-center" uk-parallax="target: #test-filter; blur: 0,5;">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">方向</h3>
+                            <div class="uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded" src="res/img/direction.svg" alt=""／>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3 uk-text-center" uk-parallax="target: #test-filter; blur: 0,5;">
+                            <h3 class="uk-margin-small-top san-h2" style="color: white">学生</h3>
+                            <img class="uk-border-rounded" src="res/img/student.svg" alt=""／>
+                        </div>
+                    </div>
+                </div>    
+                <div class="uk-section uk-section-medium uk-section-secondary"></div>
+                <div>
+                    <div class="uk-width-1-3 uk-flex-column">
+                        <h1 class="san-h0 uk-text-center " style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">我们做？</h1>
+                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary">
+
+                    </div>
+
+                    <!-- 一 -->
                     <div>
-                        <div class="uk-tile uk-tile-secondary uk-padding-remove">
-                            <h3><a href="#about-us" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">组织架构</h3></a></h3>
-                            <div class="uk-child-width-1-2@s uk-child-width-1-1@l uk-grid-small uk-container-expand" uk-grid>
-                                <div><p>文艺部</p></div>
-                                <div><p>体育部</p></div>
-                                <div><p>宣传部</p></div>
-                                <div><p>组织部</p></div>
-                                <div><p>外联部</p></div>
-                                <div><p>学术部</p></div>
-                                <div><p>秘书处</p></div>
+                        <div class="uk-width-1-3 uk-flex-column" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 500">
+                            <h1 class="san-h1" style="color: white">一、学院动态提醒</h1>
+                        </div>
+                        
+                        
+                        <div class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                            <div class="uk-width-2-3">
+                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 600; repeat: false">
+                                    <div>
+                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                        <div class="uk-inline uk-inline-clip">
+                                            <img class="uk-border-rounded" src="res/img/publish_1.png" alt=""／>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1000; repeat: false">
+                                    <div>
+                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                        <div class="uk-inline uk-inline-clip">
+                                            <img class="uk-border-rounded" src="res/img/publish_2.png" alt=""／>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1400; repeat: false">
+                                    <div>
+                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                        <div class="uk-inline uk-inline-clip">
+                                            <img class="uk-border-rounded" src="res/img/publish_3.png" alt=""／>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="uk-width-1-3 uk-text-left" >
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 600">团学联主页</h2>
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">学院官网</h2>
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1400">小软家</h2>
+                            </div>
+                            
+                            <div class="uk-width-1-1 uk-text-left" >
+                                <h3 class="san-h3" style="color: white">
+                                    分别发挥各自的优势，完成每个团学活动的官方通知、活动宣传、活动新闻和后期推广互动。利用线上平台的推广面进行信息公告和各类新闻通知，使团委工作规范化、具体化、透明化。两种方式相结合的方式发挥了公众号的活跃以及学院网的严谨。两种方式相结合的方式宣传效果显著。
+                                </h3>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="uk-section uk-section-medium uk-section-secondary">
+
+                    </div>
+                    <!-- 二 -->
+                    
+                    <div>
+                        <div class="uk-width-1-3 uk-flex-column uk-float-right" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 500">
+                            <h1 class="san-h1" style="color: white">二、组织文体活动</h1>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                            <!-- 文字 -->
+
+                            <div class="uk-width-1-3 uk-text-right" >
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 600">迎新晚会</h2>
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">毕业晚会</h2>
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1400">科技节</h2>
+                            </div>
+
+                            <!-- 图片 -->
+                            <div class="uk-width-2-3">
+                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 600; repeat: false">
+                                    <div>
+                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                        <div class="uk-inline uk-inline-clip">
+                                            <img class="uk-border-rounded" src="res/img/activity_7.jpeg" alt=""／>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1000; repeat: false">
+                                    <div>
+                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                        <div class="uk-inline uk-inline-clip">
+                                            <img class="uk-border-rounded" src="res/img/activity_2.png" alt=""／>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1400; repeat: false">
+                                    <div>
+                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                        <div class="uk-inline uk-inline-clip">
+                                            <img class="uk-border-rounded" src="res/img/activity_5.png" alt=""／>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="uk-width-1-1 uk-text-left" >
+                                <h3 class="san-h3" style="color: white">
+                                    专注于进一步发展院内文化，丰富学子的课余生活，从同学们的兴趣和爱好出发，专注文艺活动。学生会视频专业承包一条龙服务。这里是头脑风暴的高发区，脑洞不开不凉爽夫斯基，从多动症里榨取出文艺的情怀，从日夜兼程里领略热血沸腾。
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-section uk-section-medium uk-section-secondary">
+
+                    </div>
+
+                    <!-- 三 -->
+                    <div>
+                        <div class="uk-width-1-1 uk-text-center" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.3,1; viewport: 0.5;">
+                            <h1 class="san-h1" style="color: white">三、学生情况反馈</h1>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                            <!-- 文字 -->
+
+                            <div class="uk-width-1-2 uk-text-center" >
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 600">绩点考评改革</h2>
+                            </div>
+
+                            <div class="uk-width-1-2 uk-text-center" >
+                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 600">信息审计</h2>
+                            </div>
+                            
+                            <div class="uk-width-1-1 uk-text-left" >
+                                <h3 class="san-h3" style="color: white">
+                                    秉承“全心服务同学，着眼校园发展”，立身广大同学之中，双向联系学生与学院，搭建沟通桥梁，协助解决同学们的生活问题，优化学院政策。丰富校园文化，提高大家生活的质量。以服务大众为己任，不断地为这所高等学府营造更为民主、自由的氛围！
+                                </h3>
                             </div>
                         </div>
                     </div>
-                     <div>
-                        <div class="uk-tile uk-tile-secondary uk-padding-remove">
-                            <h3><a href="#about-us" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">联系方式</h3></a></h3>
-                            <div>
-                                <p>地址：上海市曹安公路4800号 同济大学济世楼509 </p>
-                                <p>公共邮箱：tjssesu@163.com</p>
+                    <div class="uk-section uk-section-medium uk-section-secondary">
+                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary">
+                    </div>    
+                    
+
+                    <!-- LAST -->
+                    <div>
+                        
+                        <div class="uk-inline uk-width-1-1" >
+                            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid-parallax="translate:200">
+                                <div>
+                                    <img src="res/img/grid_1.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_2.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_3.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_4.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_5.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_6.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_7.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_8.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_9.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_10.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_13.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_12.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_14.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_15.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_16.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="res/img/grid_17.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="uk-overlay-primary uk-position-cover"></div>
+                            <div class="uk-overlay uk-flex uk-flex-center uk-position-center" >
+                                <article class="uk-article uk-text-center" >
+                                    <h2 class="san-h2" style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">我们执着于</h2>
+                                    <h1 class="san-h0" style="color: white" uk-parallax="opacity: 0,1; y: 100,0; scale: 2,1; viewport: 0.2;">“致广大而尽精微”</h1>
+                                </article>
+
+                                <article class="uk-article uk-text-center" >
+                                    <h2 class="san-h2" style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.2;">这里是</h2>
+                                    <h1 class="san-h0" style="color: white" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.2;">同济大学软件学院团学联</h1>
+                                </article>
+
+                                <article class="uk-article uk-text-center" >
+                                    <div uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.2;">
+                                        <h3 class="san-h3" style="color: white">我们在这里等你</h3>
+                                        <h1 class="san-h1" style="color: white">点击了解更多</h1>
+                                    </div>
+                                    <div class="uk-inline uk-inline-clip uk-transition-toggle uk-width-1-6" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.2;">
+                                        <a href="http://www.baidu.com">
+                                            <img class="uk-border-rounded" src="res/img/direction.svg" alt=""／>
+                                        </a>
+                                    </div>
+                                    
+                                </article>
                             </div>
                         </div>
                     </div>
-                     <div>
-                        <div class="uk-tile uk-tile-secondary uk-padding-remove">
-                            <h3><a href="http://sse.tongji.edu.cn" class="uk-button uk-button-text"><h3 class="uk-margin-remove-bottom">学院官网</h3></a></h3>
-                            <div >
-                                <p>sse.tongji.edu.cn</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
             </div>
         </div>
+          
     </body>
 </html>
