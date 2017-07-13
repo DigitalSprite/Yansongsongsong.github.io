@@ -14,15 +14,35 @@
         <script src="https://cdn.bootcss.com/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
         <title>同济大学软件学院团学联</title>
         <style>
+            @media screen and (min-width: 320px) {
+                html {font-size: 50%;}
+            }
+             
+            @media screen and (min-width: 360px) {
+                html {font-size: 60%;}
+            }
+             
+            @media screen and (min-width: 400px) {
+                html {font-size: 70%;}
+            }
+             
+            @media screen and (min-width: 440px) {
+                html {font-size: 80%;}
+            }
+             
+            @media screen and (min-width: 480px) {
+                html {font-size: 90%;}
+            }
+             
+            @media screen and (min-width: 640px) {
+                html {font-size: 100%;}
+            }
             @font-face {font-family: "san";
               src: url('res/font/webfont.eot'); /* IE9*/
               src: url('res/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
               url('res/font/webfont.woff') format('woff'), /* chrome、firefox */
               url('res/font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
               url('res/font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
-            }
-            html {
-                font-size: 100%;
             }
             
             .san-h0 {
@@ -80,23 +100,21 @@
             </div>
         </div>
         <div class="uk-section uk-section-large uk-section-secondary">
-            <div class="uk-container uk-padding-large">
+            <div class="uk-container uk-padding-large@l">
                 <div>
-                    <div class="uk-width-1-3 uk-flex-column">
+                    <div class="uk-width-1-3@m uk-width-1-2@s uk-flex-column">
                         <h1 class="san-h0 uk-text-center " style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">我们是？</h1>
                     </div>
                     
-                    <div class="uk-section uk-section-medium uk-section-secondary">
-
-                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary uk-visible@m"></div>
                     
                     <!-- 一 -->
                     <div class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                        <div class="uk-width-1-3" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                        <div class="uk-width-1-3@m uk-width-1-1@s" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
                             <h1 class="san-h1  " style="color: white">一、学生团体</h1>
                         </div>
 
-                        <div class="uk-width-2-3 uk-text-left" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                        <div class="uk-width-2-3@m uk-width-1-1@s uk-text-left" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
                             <h2 class="san-h2" style="color: white">自我服务、自我管理、自我教育，坚持民主决议。</h2>
                             <h2 class="san-h2" style="color: white">基于群体、基于自觉、基于创想，追求平等自由。</h2>
                         </div>
@@ -128,22 +146,19 @@
                         </div>
                     </div>
 
-                    <div class="uk-section uk-section-medium uk-section-secondary">
-
-                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary uk-visible@m"></div>
 
                     <!-- 二 -->
                     <div class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                        <div class="uk-width-2-3 uk-text-left" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
-                            <h2 class="san-h2" style="color: white">据理力争，捍卫每一位同学的切身权益。</h2>
-                            <h2 class="san-h2" style="color: white">代表学生，确保每一个想法都掷地有声。</h2>
-                        </div>
-
-                        <div class="uk-width-1-3" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                        <div class="uk-width-1-3@l" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
                             <h1 class="san-h1  " style="color: white">二、沟通桥梁</h1>
                         </div>
-                        
-                        <div class="uk-width-1-3@m uk-text-center">
+                        <div class="uk-width-2-3@l uk-flex-right uk-text-left" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                            <h2 class="san-h2" style="color: white">据理力争，捍卫每一位同学的切身权益。</h2>
+                            <h2 class="san-h2" style="color: white">代表学生，确保每一个想法都掷地有声。</h2>
+                        </div>  
+              
+                        <div class="uk-width-1-3@m uk-flex-left uk-text-center">
                             <h3 class="uk-margin-small-top san-h2" style="color: white">学生代表</h3>
                             <div class="uk-border-circle uk-inline uk-inline-clip uk-transition-toggle" >
                                 <img class="uk-transition-scale-up uk-transition-opaque" src="res/img/rep_2.jpeg" alt=""／>
@@ -161,19 +176,18 @@
                         </div>
                     </div>
 
-                    <div class="uk-section uk-section-medium uk-section-secondary">
-
-                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary uk-visible@m"></div>
                     
                     <!-- 三 -->
                     <div id="test-filter" class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                        <div class="uk-width-1-3">
+
+                        <div class="uk-width-1-3@l" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
                             <h1 class="san-h1  " style="color: white">三、团委+学联</h1>
                         </div>
-                        <div class="uk-width-2-3 uk-text-left" >
+                        <div class="uk-width-2-3@l uk-flex-right uk-text-left@m uk-text-center@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
                             <h2 class="san-h2" style="color: white">校方学生联手，不仅仅是领导。</h2>
                             <h2 class="san-h2" style="color: white">学生校方合作，不仅仅是共赢。</h2>
-                        </div>
+                        </div>  
 
                         <div class="uk-width-1-3 uk-text-center" uk-parallax="target: #test-filter; blur: 0,5;">
                             <h3 class="uk-margin-small-top san-h2" style="color: white">教师</h3>
@@ -189,28 +203,28 @@
                         </div>
                         <div class="uk-width-1-3 uk-text-center" uk-parallax="target: #test-filter; blur: 0,5;">
                             <h3 class="uk-margin-small-top san-h2" style="color: white">学生</h3>
-                            <img class="uk-border-rounded" src="res/img/student.svg" alt=""／>
+                            <div class="uk-inline uk-inline-clip uk-transition-toggle" >
+                                <img class="uk-border-rounded" src="res/img/student.svg" alt=""／>
+                            </div>
                         </div>
                     </div>
                 </div>    
                 <div class="uk-section uk-section-medium uk-section-secondary"></div>
                 <div>
-                    <div class="uk-width-1-3 uk-flex-column">
+                    <div class="uk-width-1-3@m uk-width-1-2@s uk-flex-column">
                         <h1 class="san-h0 uk-text-center " style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">我们做？</h1>
                     </div>
-                    <div class="uk-section uk-section-medium uk-section-secondary">
-
-                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary uk-visible@m"></div>
 
                     <!-- 一 -->
                     <div>
-                        <div class="uk-width-1-3 uk-flex-column" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 500">
+                        <div class="uk-width-1-3@l uk-flex-column" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 500">
                             <h1 class="san-h1" style="color: white">一、学院动态提醒</h1>
                         </div>
                         
                         
                         <div class="uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                            <div class="uk-width-2-3">
+                            <div class="uk-width-2-3@m">
                                 <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 600; repeat: false">
                                     <div>
                                         <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
@@ -240,10 +254,18 @@
                                 
                             </div>
 
-                            <div class="uk-width-1-3 uk-text-left" >
-                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 600">团学联主页</h2>
-                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">学院官网</h2>
-                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1400">小软家</h2>
+                            <div class="uk-width-1-3@m uk-child-width-1-3@s uk-text-left" >
+                                <div>
+                                    <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 600">团学联主页</h2>
+                                </div>
+                                <div>
+                                    <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">学院官网</h2>
+                                </div>
+                                <div>
+                                    <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1400">小软家</h2>
+                                </div>
+                                
+                                
                             </div>
                             
                             <div class="uk-width-1-1 uk-text-left" >
@@ -254,54 +276,60 @@
                         </div>
                     </div>    
 
-                    <div class="uk-section uk-section-medium uk-section-secondary">
-
-                    </div>
+                    <div class="uk-section uk-section-medium uk-section-secondary uk-visible@m"></div>
                     <!-- 二 -->
                     
                     <div>
-                        <div class="uk-width-1-3 uk-flex-column uk-float-right" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 500">
+                        <div class="uk-width-1-3@l uk-flex-column uk-float-right" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 500">
                             <h1 class="san-h1" style="color: white">二、组织文体活动</h1>
                         </div>
 
                         <div class="uk-width-1-1 uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                            <!-- 文字 -->
-
-                            <div class="uk-width-1-3 uk-text-right" >
-                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 600">迎新晚会</h2>
-                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">毕业晚会</h2>
-                                <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1400">科技节</h2>
-                            </div>
-
-                            <!-- 图片 -->
-                            <div class="uk-width-2-3">
-                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 600; repeat: false">
-                                    <div>
-                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
-                                        <div class="uk-inline uk-inline-clip">
-                                            <img class="uk-border-rounded" src="res/img/activity_7.jpeg" alt=""／>
+                            <div class="uk-flex uk-flex-center uk-width-1-1 uk-flex-middle uk-grid-medium">
+                                <!-- 图片 -->
+                                <div class="uk-width-2-3@m uk-flex-last@s uk-child-widtth-1-3 uk-grid-collapse uk-margin" uk-grid>
+                                    <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 600; repeat: false">
+                                        <div>
+                                            <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                            <div class="uk-inline uk-inline-clip">
+                                                <img class="uk-border-rounded" src="res/img/activity_7.jpeg" alt=""／>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                
-                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1000; repeat: false">
-                                    <div>
-                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
-                                        <div class="uk-inline uk-inline-clip">
-                                            <img class="uk-border-rounded" src="res/img/activity_2.png" alt=""／>
+                                    
+                                    <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1000; repeat: false">
+                                        <div>
+                                            <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                            <div class="uk-inline uk-inline-clip">
+                                                <img class="uk-border-rounded" src="res/img/activity_2.png" alt=""／>
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1400; repeat: false">
+                                        <div>
+                                            <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
+                                            <div class="uk-inline uk-inline-clip">
+                                                <img class="uk-border-rounded" src="res/img/activity_5.png" alt=""／>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
 
-                                <div class="uk-width-1-3 uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 1400; repeat: false">
+                                <!-- 文字 -->
+
+                                <div class="uk-width-1-3@m uk-text-right uk-flex-first@m uk-matgin-right" >
                                     <div>
-                                        <h3 class="uk-margin-small-top san-h2" style="color: white"></h3>
-                                        <div class="uk-inline uk-inline-clip">
-                                            <img class="uk-border-rounded" src="res/img/activity_5.png" alt=""／>
-                                        </div>
+                                        <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 600">迎新晚会</h2>
+                                    </div>
+                                    <div>
+                                        <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">毕业晚会</h2>
+                                    </div>
+                                    <div>
+                                        <h2 class="san-h2" style="color: white" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1400">科技节</h2>
                                     </div>
                                 </div>
-                                
                             </div>
                             
                             <div class="uk-width-1-1 uk-text-left" >
@@ -323,7 +351,7 @@
                             <h1 class="san-h1" style="color: white">三、学生情况反馈</h1>
                         </div>
 
-                        <div class="uk-width-1-1 uk-grid-match uk-padding-large uk-text-center uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-match uk-padding-large uk-text-center uk-grid-small uk-flex uk-flex-center uk-flex-middle" uk-grid>
                             <!-- 文字 -->
 
                             <div class="uk-width-1-2 uk-text-center" >
@@ -351,14 +379,14 @@
                     <div>
                         
                         <div class="uk-inline uk-width-1-1" >
-                            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid-parallax="translate:200">
-                                <div>
+                            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid-parallax="translate:200" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 600; repeat: false">
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_1.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_2.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_3.jpg" alt="">
                                 </div>
                                 <div>
@@ -382,22 +410,22 @@
                                 <div>
                                     <img src="res/img/grid_10.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_13.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_12.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_14.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_15.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_16.jpeg" alt="">
                                 </div>
-                                <div>
+                                <div class="uk-visible@l">
                                     <img src="res/img/grid_17.png" alt="">
                                 </div>
                             </div>
@@ -406,7 +434,7 @@
                             <div class="uk-overlay uk-flex uk-flex-center uk-position-center" >
                                 <article class="uk-article uk-text-center" >
                                     <h2 class="san-h2" style="color: white" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">我们执着于</h2>
-                                    <h1 class="san-h0" style="color: white" uk-parallax="opacity: 0,1; y: 100,0; scale: 2,1; viewport: 0.2;">“致广大而尽精微”</h1>
+                                    <h1 class="san-h1" style="color: white" uk-parallax="opacity: 0,1; y: 100,0; scale: 2,1; viewport: 0.2;">“致广大而尽精微”</h1>
                                 </article>
 
                                 <article class="uk-article uk-text-center" >
